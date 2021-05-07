@@ -28,6 +28,7 @@
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
+      font-weight: bold
 .logo
   width: 177px
 .search
@@ -45,8 +46,10 @@
     border: none
     font-size: 12px
     line-height: 15px
-    color: $placeholder-color
     outline: none
+    color: $text-color
+    &::placeholder
+      color: $placeholder-color
   &__button
     position: absolute
     top: 0

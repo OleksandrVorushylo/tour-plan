@@ -392,6 +392,7 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  font-weight: bold;
 }
 
 .logo {
@@ -414,8 +415,17 @@ img {
   border: none;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
   outline: none;
+  color: #333333;
+}
+.search__input::-moz-placeholder {
+  color: #BDBDBD;
+}
+.search__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+.search__input::placeholder {
+  color: #BDBDBD;
 }
 .search__button {
   position: absolute;
@@ -480,7 +490,7 @@ img {
     width: 132px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
