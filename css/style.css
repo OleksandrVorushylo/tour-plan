@@ -345,6 +345,7 @@ template {
 body {
   font-family: "Mulish", sans-serif;
   color: #333333;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -455,6 +456,27 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  margin: 0;
+}
+.breadcrumb-list__item {
+  font-size: 10px;
+  line-height: 13px;
+  color: #0A223D;
+}
+.breadcrumb-list__item:not(:last-child)::after {
+  content: "/";
+  margin-right: 4px;
+}
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 1200px) {
