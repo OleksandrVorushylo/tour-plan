@@ -9,8 +9,9 @@
       padding-top: 30px
       padding-bottom: 30px
     &__search
-      margin-left: auto
+      margin-left: 47px
     &-menu
+      justify-content: space-around
       padding: 22px 0
       &__link
         font-size: 12px
@@ -25,6 +26,8 @@
     max-width: 576px
     width: 92%
   .navbar
+    &-top
+      padding-top: 24px
     &-menu
       display: none
     &__search
@@ -51,6 +54,9 @@
     flex-basis: auto
     width: 60px
   .hotel
+    padding-top: 0
+    &-stars
+      margin-right: 5px
     &-wrapper
       justify-content: space-between
     &-name
@@ -68,5 +74,7 @@
       &__description
         margin-bottom: 38px
 @media (max-width: 576px)
+  .container
+    width: 88%
   .logo
     width: 99px
