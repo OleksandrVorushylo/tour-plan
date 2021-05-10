@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -111,8 +112,42 @@
         <!-- /.hotel-info__right -->
       </div>
       <!-- /.hotel-info -->
+      <div class="hotel-grid">
+        <div class="slider">
+          <!-- Основной контейнер слайдера -->
+          <div class="swiper-container swiper-container__position">
+            <!-- Дополнительная необходимая обертка -->
+            <div class="swiper-wrapper">
+              <!-- Слайды -->
+              <div class="swiper-slide">
+                <img src="img/slide.jpg" alt="slide">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide-two.jpg" alt="slide">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide-three.jpg" alt="slide">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide-four.jpg" alt="slide">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide-five.jpg" alt="slide">
+              </div>
+            </div>
+            <!-- Если нам нужны кнопки навигации -->
+            <button class="slider-button slider-button--prev"></button>
+            <button class="slider-button slider-button--next"></button>
+          </div>
+          <!-- /.Основной контейнер слайдера -->
+        </div>
+        <!-- /.slider -->
+      </div>
+      <!-- /.hotel-grid -->
     </div>
   </section>
   <!-- /.hotel -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
