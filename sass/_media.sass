@@ -54,6 +54,25 @@
       margin-right: 25px
   .map
     with: 340px
+  .reviews
+    &-title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+    &-slider
+      &__item
+        max-width: 579px
+        min-height: 300px
+      &__profile
+        margin-bottom: 32px
+      &__text
+        margin-top: 0
+      &__button
+        top: 50%
+        &--prev
+          left: 0
+        &--next
+          right: 0
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -141,6 +160,29 @@
       margin-bottom: 20px
   .map
     width: 100%
+  .reviews
+    &-title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 50px
+    &-slider
+      &__item
+        padding: 0 29px 36px 33px
+        &::before, &::after
+          display: none
+        &__profile
+          margin-bottom: 32px
+      &__text
+        margin-top: 0
+      &__button
+        top: 45px
+
+        &--prev
+          left: 25%
+          // transform: translate(-50%, 0)
+        &--next
+          right: 25%
+          // transform: translate(50%, 0)
 @media (max-width: 576px)
   .container
     width: 88%
@@ -166,11 +208,53 @@
         font-size: 30px
         line-height: 38px
         margin-top: 4px
+  .reviews
+    &-title
+
+    &-slider
+      &__item
+
+        &::before, &::after
+
+        &__profile
+          margin-bottom: 32px
+      &__text
+        margin-top: 0
+      &__button
+        top: 45px
+
+        &--prev
+          left: 20%
+          // transform: translate(-50%, 0)
+        &--next
+          right: 20%
+          // transform: translate(50%, 0)
 @media (max-width: 410px)
   .subscribe
     width: 100%
+  .reviews
+    &-title
+      max-width: 245px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 40px
+    &-slider
+      &__username
+        margin-top: 12px
+        line-height: 14px
+    &__button
+      &--prev
+        left: 1%
+      &--next
+        right: 1%
 @media (max-width: 320px)
   .map
     height: 172px
   .map-block
     height: 172px
+  .reviews
+    &__button
+      &--prev
+        left: 0%
+      &--next
+        right: 0%
