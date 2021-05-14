@@ -787,6 +787,119 @@ img {
   line-height: 15px;
   color: #FFFFFF;
   min-width: 65px;
+  cursor: pointer;
+}
+
+.reviews {
+  padding: 40px 0 70px 0;
+}
+.reviews-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+.reviews-slider__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin: 45px auto 0;
+  max-width: 730px;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 60px 30px 64px;
+}
+.reviews-slider__item::before {
+  content: "";
+  position: absolute;
+  left: 62px;
+  top: 13px;
+  width: 70px;
+  height: 47px;
+  background-image: url(../img/quote-left.svg);
+  background-repeat: no-repeat;
+}
+.reviews-slider__item::after {
+  content: "";
+  position: absolute;
+  right: 62px;
+  top: 118px;
+  width: 70px;
+  height: 47px;
+  background-image: url(../img/quote-right.svg);
+  background-repeat: no-repeat;
+}
+.reviews-slider__button {
+  position: absolute;
+  top: 44%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-size: 10px;
+  z-index: 10;
+}
+.reviews-slider__button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev-reviws.png);
+}
+.reviews-slider__button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next-reviws.png);
+}
+.reviews-slider__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -45px;
+  margin-bottom: 15px;
+}
+.reviews-slider__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.reviews-slider__username {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+.reviews-slider__date {
+  font-size: 10px;
+  line-height: 13px;
+  margin-bottom: 4px;
+}
+.reviews-slider__rating {
+  display: flex;
+  flex-basis: 100%;
+}
+.reviews-slider__rating--star {
+  margin-right: 2px;
+}
+.reviews-slider__rating--star:nth-child(5) {
+  margin-right: 0;
+}
+.reviews-slider__text {
+  max-width: 537px;
+  font-size: 12px;
+  line-height: 160%;
+  text-align: justify;
+  margin: auto;
 }
 
 @media (max-width: 1200px) {
