@@ -11,6 +11,20 @@
       height: 100%
       width: 100%
       object-fit: cover
+  .activities
+    &__title
+    &-wrapper
+  .card
+    width: 230px
+    height: 230px
+    &::before
+    &__image
+    &__title
+      &--first
+      &--second
+    &--third
+      &--last
+    &__button
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -77,6 +91,16 @@
           left: 0
         &--next
           right: 0
+  .activities
+    padding: 48px 0 98px 0
+    &__title
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 339px
+    height: 255px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -198,6 +222,16 @@
           margin-left: 89px
           // right: 37px
           // transform: translate(50%, 0)
+  .activities
+    &__title
+    &-wrapper
+      flex-wrap: wrap
+      justify-content: center
+    &__card
+      margin: 0 10px 10px 10px
+  .card
+    width: 45%
+    height: 255px
 @media (max-width: 576px)
   .container
     width: 88%
@@ -237,6 +271,25 @@
         margin-top: 136px
         text-align: left
       &__button
+  .activities
+    padding: 22px 0 98px 0
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 33px
+    &-wrapper
+      flex-wrap: wrap
+      justify-content: center
+    &__card
+      margin: 0
+      margin-bottom: 20px
+      &--position
+        margin-bottom: 28px
+  .card
+    width: 100%
+    max-width: 100%
+    height: 255px
+    &__image
 @media (max-width: 410px)
   .subscribe
     width: 100%

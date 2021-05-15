@@ -185,7 +185,7 @@
     </div>
   </section>
   <!-- /.hotel -->
-  <section class="newsletter">
+  <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title newsletter-title--position">subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
@@ -211,11 +211,11 @@
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
-                  <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
-                  <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
-                  <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
-                   <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
-                  <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
+                   <img class="reviews-slider__star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
                 </div>
                 <!-- /.rating -->
               </div>
@@ -237,11 +237,11 @@
                 <h3 class="reviews-slider__username">Jon Snow</h3>
                 <span class="reviews-slider__date">Stayed 15 Jan, 2018</span>
                 <div class="reviews-slider__rating">
-                  <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
-                  <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
-                  <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
-                   <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
-                  <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
                 </div>
                 <!-- /.rating -->
               </div>
@@ -259,11 +259,11 @@
                 <h3 class="reviews-slider__username">Daenerys Targaryen</h3>
                 <span class="reviews-slider__date">Stayed 16 Dec, 2018</span>
                 <div class="reviews-slider__rating">
-                  <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
-                  <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
-                  <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
-                   <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
-                  <img class="reviews-slider__rating--star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
+                  <img class="reviews-slider__star" src="img/star.svg" alt="">
                 </div>
                 <!-- /.rating -->
               </div>
@@ -277,16 +277,55 @@
           <!-- /.swiper-slide -->
         </div>
         <!-- /.swiper-wrapper -->
-        <button class="reviews-slider__button reviews-slider__button--prev"><img class="reviews-slider__button--img" src="img/arrow-prev-reviews.svg" alt=""></button >
-        <button class="reviews-slider__button reviews-slider__button--next"><img class="reviews-slider__button--img" src="img/arrow-next-reviews.svg" alt=""></button >
+        <button class="reviews-slider__button reviews-slider__button--prev"><img src="img/arrow-prev-reviews.svg" alt=""></button >
+        <button class="reviews-slider__button reviews-slider__button--next"><img src="img/arrow-next-reviews.svg" alt=""></button >
       </div>
       <!-- /.reviews-slider -->
     </div>
     <!-- /.container -->
   </section>
   <!-- /.reviews -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/parallax.js"></script> -->
+  <section class="activities">
+    <div class="container">
+      <h2 class="activities__title">
+        Other Activities
+      </h2>
+      <div class="activities-wrapper">
+        <div class="card activities__card">
+          <img src="img/activity-1.jpg" alt="The curious corner of&nbsp;chamarel" class="card__image">
+          <h2 class="card__title card__title--first">The curious corner of chamarel</h2>
+          <button class="card__button">Book Now</button>
+        </div>
+        <!-- /.card -->
+        <div class="card activities__card activities__card--position">
+          <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
+          <h2 class="card__title card__title--second">Gymkhana club golf
+            course</h2>
+          <button class="card__button">Book Now</button>
+        </div>
+        <!-- /.card -->
+        <div class="card activities__card">
+          <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
+          <h2 class="card__title card__title--third">Tamarind falls hiking
+            trip - full day
+          </h2>
+          <button class="card__button">Book Now</button>
+        </div>
+        <!-- /.card -->
+        <div class="card activities__card">
+          <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
+          <h2 class="card__title card__title--last">The blue marine discovery quest</h2>
+          <button class="card__button">Book Now</button>
+        </div>
+        <!-- /.card -->
+      </div>
+      <!-- /.activities-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.activities -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>

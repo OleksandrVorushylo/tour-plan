@@ -56,9 +56,11 @@
       &--prev
         left: 18px
         background-image: url(../img/arrow-prev-reviws.png)
+        cursor: pointer
       &--next
         right: 18px
         background-image: url(../img/arrow-next-reviws.png)
+        cursor: pointer
     &__profile
       position: fixed
       width: 130px
@@ -86,10 +88,10 @@
     &__rating
       display: flex
       flex-basis: 100%
-      &--star
-        margin-right: 2px
-      &--star:nth-child(5)
-        margin-right: 0
+    &__star
+      margin-right: 2px
+    &__star:nth-child(5)
+      margin-right: 0
     &__text
       position: absolute
       z-index: 1
