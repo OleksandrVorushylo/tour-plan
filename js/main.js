@@ -25,8 +25,4 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider__button--prev',
   },
 
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
 });

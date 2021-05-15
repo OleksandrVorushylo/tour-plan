@@ -61,12 +61,16 @@
       margin-bottom: 50px
     &-slider
       &__item
+        padding: 0 60px 30px 64px
         max-width: 579px
-        min-height: 300px
+        height: 300px
+        &::before, &::after
+          display: none
       &__profile
         margin-bottom: 32px
       &__text
-        margin-top: 0
+        max-width: 455px
+        height: 135px
       &__button
         top: 50%
         &--prev
@@ -160,6 +164,9 @@
       margin-bottom: 20px
   .map
     width: 100%
+  .subscribe
+    &__input
+      padding-left: 20px
   .reviews
     &-title
       font-size: 18px
@@ -170,18 +177,26 @@
         padding: 0 29px 36px 33px
         &::before, &::after
           display: none
-        &__profile
-          margin-bottom: 32px
+      &__profile
+        margin-bottom: 32px
+        margin-right: 6px
       &__text
-        margin-top: 0
+        margin-top: 136px
+        height: 268px
+        max-width: 78%
       &__button
-        top: 45px
-
+        position: absolute
+        top: 32px
+        left: 50%
+        transform: translate(-50%, 0)
         &--prev
-          left: 25%
+          margin-left: -92px
+          // left: 37px
+          // left: 50%
           // transform: translate(-50%, 0)
         &--next
-          right: 25%
+          margin-left: 89px
+          // right: 37px
           // transform: translate(50%, 0)
 @media (max-width: 576px)
   .container
@@ -213,22 +228,15 @@
 
     &-slider
       &__item
-
+        height: 438px
         &::before, &::after
 
         &__profile
           margin-bottom: 32px
       &__text
-        margin-top: 0
+        margin-top: 136px
+        text-align: left
       &__button
-        top: 45px
-
-        &--prev
-          left: 20%
-          // transform: translate(-50%, 0)
-        &--next
-          right: 20%
-          // transform: translate(50%, 0)
 @media (max-width: 410px)
   .subscribe
     width: 100%
@@ -237,16 +245,11 @@
       max-width: 245px
       margin-left: auto
       margin-right: auto
-      margin-bottom: 40px
+      margin-bottom: 42px
     &-slider
       &__username
         margin-top: 12px
         line-height: 14px
-    &__button
-      &--prev
-        left: 1%
-      &--next
-        right: 1%
 @media (max-width: 320px)
   .map
     height: 172px
@@ -254,7 +257,3 @@
     height: 172px
   .reviews
     &__button
-      &--prev
-        left: 0%
-      &--next
-        right: 0%
