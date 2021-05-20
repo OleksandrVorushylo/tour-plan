@@ -32,6 +32,12 @@
       &__info
         padding: 46px 21px 30px 30px
         // max-width: 300px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    &__input
+      // flex-basis: 100%
+
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -99,7 +105,7 @@
         &--next
           right: 0
   .activities
-    padding: 48px 0 98px 0
+    padding: 48px 0 50px 0
     &__title
     &-wrapper
       flex-wrap: wrap
@@ -128,6 +134,57 @@
       &__title
       &__room
       &__price-card
+  .footer
+    padding-top: 73px
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-gap: 40px
+    &-logo
+      min-width: 96px
+      margin-top: 0
+      grid-row: 1 / 2
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+      margin-top: 8px
+    &__additional
+      width: 260px
+      grid-column: span 2
+      margin-left: -55px
+      margin-top: 8px
+    &__legal
+      width: 205px
+      grid-column: span 2
+      margin-left: 0
+      margin-top: 8px
+    &__social-network
+      grid-row: 1 / 2
+      grid-column: span 4
+      align-self: center
+      margin-top: 25px
+      margin-left: 50px
+    &__contact-details
+      grid-row: 3
+      grid-column: span 5
+    &__contact-form
+      grid-row: 4
+      grid-column: span 3
+      margin-top: 19px
+      margin-left: 0
+    &__title
+      margin-bottom: 19px
+      &--contact
+        margin-top: 18px
+        margin-bottom: 25px
+    &__ul
+      &--contact
+        margin-left: 7px
+    &__bottom
+      justify-content: space-between
+      margin-top: -10px
+      margin-left: 2px
+    &__payment
+      margin-left: 0
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -317,6 +374,14 @@
         margin-left: 0
       &__description
         display: block
+  .footer
+    &__additional
+      width: 210px
+      margin-left: -40px
+    &__social-network
+      margin-left: 30px
+    &__legal
+      max-width: 150px
 @media (max-width: 576px)
   .container
     width: 88%
@@ -356,7 +421,7 @@
         min-height: 60%
       &__button
   .activities
-    padding: 22px 0 98px 0
+    padding: 22px 0 40px 0
     &__title
       font-size: 18px
       line-height: 23px
@@ -403,6 +468,108 @@
       &__info
       &__room
         margin-bottom: 20px
+  .footer
+    padding-top: 68px
+    &-wrapper
+      grid-template-columns: 1fr
+    &-logo
+      max-width: 96px
+      grid-row: 1
+      grid-column: 1
+    &__categories
+      width: 100%
+      grid-row: 5
+      grid-column: 1
+      margin-top: -12px
+    &__additional
+      width: 100%
+      grid-row: 4
+      grid-column: 1
+      margin-left: 0
+      margin-top: -12px
+    &__legal
+      max-width: 100%
+      grid-row: 3
+      grid-column: 1
+      margin-top: -13px
+    &__social-network
+      width: 100%
+      grid-row: 2
+      grid-column: 1
+      margin-left: 0
+      display: flex
+      flex-direction: column
+      margin-top: 2px
+    &__social-links
+      margin-top: 2px
+      margin-left: 2px
+    &__link
+      &--facebook
+        margin-left: 0
+    &__text
+      &--position
+        margin-bottom: 20px
+    &__contact-details
+      grid-row: 6
+      grid-column: 1
+      margin-top: 0px
+    &__contact-form
+      width: 100%
+      grid-row: 7
+      grid-column: 1
+    &__input
+      flex-basis: 100%
+    &__message
+      width: 100%
+    &__title
+      margin-bottom: 16px
+      &--inline
+        margin-top: 0
+        margin-bottom: 19px
+
+      &--contact
+        margin-top: 0
+        margin-bottom: 24px
+    &__ul
+      &--contact
+        margin-left: 0px
+    &__contact-icon
+      width: 18px
+      margin-right: 10px
+      margin-left: -2px
+      margin-left: 3px
+      &--marker
+        width: 14px
+        margin-top: 4px
+        margin-left: 4px
+        margin-right: 12px
+        margin-bottom: 20px
+      &--phone
+        margin-top: 26px
+      &--mail
+        margin-top: 5px
+    &__contact-text
+      margin-top: 20px
+      margin-bottom: 20px
+    &__form
+      margin-top: 0
+    &__message
+      margin-bottom: 15px
+    &__info
+      flex-basis: 100%
+      margin-bottom: 15px
+    &__button
+      order: 1
+
+    &__bottom
+      justify-content: start
+      flex-direction: column
+      margin-top: 23px
+      margin-left: 0
+    &__disclaimer
+      margin-bottom: 10px
+    &__payment
+
 @media (max-width: 410px)
   .subscribe
     width: 100%
