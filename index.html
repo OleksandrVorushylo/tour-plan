@@ -14,19 +14,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" placeholder="Search Location" class="search__input">
           <button class="search__button">
             <img class="search__icon" src="img/search.svg" alt="Icon: search">
           </button>
         </form>
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -43,6 +43,20 @@
     <div class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--name navbar-menu__item--mobile--visible">
+            <a href="#" class="user navbar__user navbar__user--mobile--visible">
+              <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+              <span class="user__name">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--search navbar-menu__item--mobile--visible">
+            <form action="#" class="search navbar__search navbar__search--mobile--visible">
+              <input type="text" placeholder="Search Location" class="search__input">
+              <button class="search__button">
+                <img class="search__icon" src="img/search.svg" alt="Icon: search">
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
@@ -538,7 +552,9 @@
   <section class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer-logo">
+        <a href="#" class="footer-logo footer-logo--position">
+          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer-logo">
+        </a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">All Categories</h3>
           <ul class="footer__ul">
@@ -596,9 +612,9 @@
         <div class="footer__social-network">
           <h3 class="footer__title  footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="https://www.facebook.com/" class="footer__link footer__link--facebook"><img src="img/facebook.svg" alt="Icon: Facebook" class="footer__icon"></a>
-            <a href="https://www.youtube.com/" class="footer__link footer__link--youtube"><img src="img/youtube.svg" alt="Icon: Youtube" class="footer__icon"></a>
-            <a href="https://www.instagram.com/" class="footer__link"><img src="img/instagram.svg" alt="Icon: Instagram" class="footer__icon"></a>
+            <a href="https://www.facebook.com/" class="footer__link footer__link--facebook" target="_blank"><img src="img/facebook.svg" alt="Icon: Facebook" class="footer__icon"></a>
+            <a href="https://www.youtube.com/" class="footer__link footer__link--youtube" target="_blank"><img src="img/youtube.svg" alt="Icon: Youtube" class="footer__icon"></a>
+            <a href="https://www.instagram.com/" class="footer__link" target="_blank"><img src="img/instagram.svg" alt="Icon: Instagram" class="footer__icon"></a>
           </div>
         </div>
         <!-- /.footer__social-network -->
@@ -631,10 +647,10 @@
             <li class="footer__item">
               <img class="footer__contact-icon footer__contact-icon--phone" src="img/phone.svg" alt="">
               <div class="footer__contact-text">
-                <p class="footer__text">Tel (business hours) : <a href="tel:2691500" class="footer__link">269 1500</a></p>
-                <p class="footer__text">Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__link">52-56-61-38</a>
+                <p class="footer__text">Tel (business hours) : <a href="tel:2691500" class="footer__link footer__link--tel">269 1500</a></p>
+                <p class="footer__text">Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__link footer__link--tel">52-56-61-38</a>
                   (08:00 am – 20:00 pm)</p>
-                <p class="footer__text">Tel (hotline) Sunday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am –
+                <p class="footer__text">Tel (hotline) Sunday: <a href="tel:52566138" class="footer__link footer__link--tel">52-56-61-38</a> (08:00 am –
                   14:00 pm)</p>
               </div>
             </li>
@@ -667,19 +683,19 @@
           </div>
           <!-- /.footer__disclaimer -->
           <div class="footer__payment">
-            <a href="https://www.americanexpress.com/" class="footer__payment-link">
+            <a href="https://www.americanexpress.com/" class="footer__payment-link target="_blank"">
               <img class="footer__payment-icon" src="img/amex.png" alt="">
             </a>
-            <a href="https://www.apple.com/apple-pay/" class="footer__payment-link">
+            <a href="https://www.apple.com/apple-pay/" class="footer__payment-link target="_blank"">
               <img class="footer__payment-icon" src="img/apple.png" alt="">
             </a>
-            <a href="https://pay.amazon.com/" class="footer__payment-link">
+            <a href="https://pay.amazon.com/" class="footer__payment-link target="_blank"">
               <img class="footer__payment-icon" src="img/amazon.png" alt="">
             </a>
-            <a href="https://www.paypal.com/" class="footer__payment-link">
+            <a href="https://www.paypal.com/" class="footer__payment-link target="_blank"">
               <img class="footer__payment-icon" src="img/paypal.png" alt="">
             </a>
-            <a href="https://www.mastercard.us/" class="footer__payment-link">
+            <a href="https://www.mastercard.us/" class="footer__payment-link" target="_blank">
               <img class="footer__payment-icon" src="img/mastercard.png" alt="">
             </a>
           </div>

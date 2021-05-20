@@ -19,7 +19,9 @@
   &-logo
     width: 154px
     grid-row: 1 / 4
-    margin-top: 30px
+    margin-top: 0
+    &--position
+      margin-top: 30px
   &__list
 
   &__title
@@ -57,6 +59,9 @@
       margin-right: 12px
     &--youtube
       margin-right: 10px
+    &--tel
+      white-space: nowrap
+
   &__social-network
     grid-row: 2 / 4
     grid-column: 3 / 5
@@ -126,6 +131,7 @@
     outline: 0
     border: none
     margin-bottom: 23px
+    resize: none
     overflow: auto
     &::placeholder
       color: $placeholder-color
@@ -143,6 +149,7 @@
     font-weight: bold
     font-size: 12px
     line-height: 15px
+    color: #E0E0E0
   &__bottom
     display: flex
     justify-content: flex-end

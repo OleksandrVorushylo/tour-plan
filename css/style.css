@@ -462,6 +462,10 @@ img {
   color: #333333;
 }
 
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
+
 .breadcrumb-list {
   list-style: none;
   display: flex;
@@ -1245,6 +1249,9 @@ img {
 .footer-logo {
   width: 154px;
   grid-row: 1/4;
+  margin-top: 0;
+}
+.footer-logo--position {
   margin-top: 30px;
 }
 .footer__title {
@@ -1290,6 +1297,9 @@ img {
 }
 .footer__link--youtube {
   margin-right: 10px;
+}
+.footer__link--tel {
+  white-space: nowrap;
 }
 .footer__social-network {
   grid-row: 2/4;
@@ -1380,6 +1390,7 @@ img {
   outline: 0;
   border: none;
   margin-bottom: 23px;
+  resize: none;
   overflow: auto;
 }
 .footer__message::-moz-placeholder {
@@ -1406,6 +1417,7 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  color: #E0E0E0;
 }
 .footer__bottom {
   display: flex;
@@ -1475,6 +1487,9 @@ img {
   .footer-wrapper {
     grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
     grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  }
+  .footer__input {
+    flex-basis: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -1620,6 +1635,9 @@ img {
     margin-top: 0;
     grid-row: 1/2;
   }
+  .footer-logo--position {
+    margin-top: 0;
+  }
   .footer__categories {
     grid-row: 2/3;
     grid-column: span 2;
@@ -1653,6 +1671,10 @@ img {
     grid-column: span 3;
     margin-top: 19px;
     margin-left: 0;
+    width: 539px;
+  }
+  .footer__input {
+    flex-basis: auto;
   }
   .footer__title {
     margin-bottom: 19px;
@@ -1666,7 +1688,7 @@ img {
   }
   .footer__bottom {
     justify-content: space-between;
-    margin-top: -10px;
+    margin-top: 56px;
     margin-left: 2px;
   }
   .footer__payment {
@@ -1679,6 +1701,10 @@ img {
     width: 92%;
   }
 
+  body {
+    padding-top: 70px;
+  }
+
   .newsletter-wrapper {
     flex-direction: column;
     align-items: flex-start;
@@ -1689,19 +1715,57 @@ img {
     margin-bottom: 37px;
   }
 
+  .navbar__mobile--fixed {
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+  .navbar-bottom {
+    display: none;
+  }
+  .navbar-bottom--visible {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 70px;
+  }
   .navbar-top {
     padding-top: 24px;
   }
   .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 16px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+  }
+  .navbar-menu__item--name {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--search {
+    margin-bottom: 39px;
+  }
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
   }
-  .navbar__search {
-    display: none;
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: flex;
   }
   .navbar__user {
-    display: none;
+    flex-direction: column;
   }
-  .navbar .menu-button {
+  .navbar__search {
+    margin-top: 4px;
+    margin-left: 0;
+  }
+
+  .menu-button {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1713,10 +1777,28 @@ img {
     background-color: #FFFFFF;
     cursor: pointer;
   }
-  .navbar .menu-button__line {
+  .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .menu-button__item {
+    margin-bottom: 39px;
+    margin-left: 0;
+    display: flex;
+  }
+
+  .user {
+    margin-top: 12px;
+  }
+  .user__name {
+    color: #FFFFFF;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .search__input {
+    max-width: 245px;
   }
 
   .stars {
@@ -2052,14 +2134,14 @@ img {
     width: 100%;
     grid-row: 5;
     grid-column: 1;
-    margin-top: -12px;
+    margin-top: -10px;
   }
   .footer__additional {
     width: 100%;
     grid-row: 4;
     grid-column: 1;
     margin-left: 0;
-    margin-top: -12px;
+    margin-top: -10px;
   }
   .footer__legal {
     max-width: 100%;
@@ -2084,7 +2166,7 @@ img {
     margin-left: 0;
   }
   .footer__text--position {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
   .footer__contact-details {
     grid-row: 6;
@@ -2136,8 +2218,8 @@ img {
     margin-top: 5px;
   }
   .footer__contact-text {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 24px;
+    margin-bottom: 22px;
   }
   .footer__form {
     margin-top: 0;
