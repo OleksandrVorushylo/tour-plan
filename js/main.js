@@ -26,3 +26,13 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
   },
 
 });
+
+
+$('.packages-first__text').css({'display':'none'});  
+$('.packages-first__description').click(function(){
+   $(this).next('.packages-first__text').slideToggle(500)
+});
+
+$(".packages-first__description").click(function() {
+    $(this).toggleClass("open");
+});

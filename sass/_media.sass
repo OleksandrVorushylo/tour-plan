@@ -287,6 +287,7 @@
         margin: 0
         overflow: auto
         height: 100px
+        display: none
     &-first
       display: flex
       grid-column-start: auto
@@ -314,6 +315,8 @@
         margin-left: 0
       &__price-card
         margin-left: 0
+      &__description
+        display: block
 @media (max-width: 576px)
   .container
     width: 88%
@@ -386,6 +389,7 @@
       &__title
         margin-bottom: 10px
       &__text
+        display: none
         min-height: 40%
     &-stars
       position: absolute
@@ -437,3 +441,7 @@
     &-slider
       &__text
         height: 270px
+  .packages
+    &-info
+      &__text
+        height: 52%

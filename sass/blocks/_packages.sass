@@ -125,6 +125,75 @@
       margin-left: 2px
     &__price-card
       margin-left: 2px
+    &__description
+      display: none
+      font-size: 16px
+      cursor: pointer
+      margin-bottom: 10px
+    &__spoiler
+      position: relative
+      cursor: pointer
+      margin: 0
+      margin-left: 10px
+      width: 33px
+      height: 15px
+    &__spoiler-left
+      position: absolute
+      background-color: transparent
+      top: 7px
+      left: 0
+      width: 20px
+      height: 5px
+      display: block
+      transform: rotate(35deg)
+      float: right
+      border-radius: 2px
+    &__spoiler-left:after
+      content: ""
+      background-color: $gray
+      width: 20px
+      height: 5px
+      display: block
+      float: right
+      border-radius: 6px 10px 10px 6px
+      transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8)
+      z-index: -1
+
+    &__spoiler-right
+      position: absolute
+      background-color: transparent
+      top: 7px
+      left: 13px
+      width: 20px
+      height: 5px
+      display: block
+      transform: rotate(-35deg)
+      float: right
+      border-radius: 2px
+    &__spoiler-right:after
+      content: ""
+      background-color: $gray
+      width: 20px
+      height: 5px
+      display: block
+      float: right
+      border-radius: 10px 6px 6px 10px
+      transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8)
+      z-index: -1
+    &__text
+      display: none
+      font-weight: 600
+      font-size: 14px
+      line-height: 22px
+      margin: 0
+      overflow: auto
+      height: 165px
+.open .packages-first__spoiler-left:after
+  transform-origin: center center
+  transform: rotate(-70deg)
+.open .packages-first__spoiler-right:after
+  transform-origin: center center
+  transform: rotate(70deg)
 
 // .packages
 //   &__title
