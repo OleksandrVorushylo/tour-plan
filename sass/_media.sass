@@ -141,7 +141,7 @@
       grid-template-columns: repeat(6, 1fr)
       grid-gap: 40px
     &-logo
-      min-width: 96px
+      max-width: 96px
       margin-top: 0
       grid-row: 1 / 2
       &--position
@@ -149,17 +149,17 @@
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
-      margin-top: 8px
+      margin-top: 5px
     &__additional
       width: 260px
       grid-column: span 2
       margin-left: -55px
-      margin-top: 8px
+      margin-top: 5px
     &__legal
       width: 205px
       grid-column: span 2
       margin-left: 0
-      margin-top: 8px
+      margin-top: 5px
     &__social-network
       grid-row: 1 / 2
       grid-column: span 4
@@ -216,17 +216,22 @@
         right: 0
     &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 70px
+      padding-top: 30px
       &--visible
         display: block
-        position: fixed
-        left: 0
-        right: 0
-        bottom: 0
-        top: 70px
+        overflow-y: auto
+
     &-top
       padding-top: 24px
     &-menu
       flex-direction: column
+      // // max-height: 480px
+      // overflow-y: auto
       &__item
         margin-bottom: 16px
         &--mobile
@@ -242,6 +247,7 @@
           display: none
         &--visible
           display: flex
+          // overflow: auto
 
     &__user
       flex-direction: column

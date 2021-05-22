@@ -1631,7 +1631,7 @@ img {
     grid-gap: 40px;
   }
   .footer-logo {
-    min-width: 96px;
+    max-width: 96px;
     margin-top: 0;
     grid-row: 1/2;
   }
@@ -1641,19 +1641,19 @@ img {
   .footer__categories {
     grid-row: 2/3;
     grid-column: span 2;
-    margin-top: 8px;
+    margin-top: 5px;
   }
   .footer__additional {
     width: 260px;
     grid-column: span 2;
     margin-left: -55px;
-    margin-top: 8px;
+    margin-top: 5px;
   }
   .footer__legal {
     width: 205px;
     grid-column: span 2;
     margin-left: 0;
-    margin-top: 8px;
+    margin-top: 5px;
   }
   .footer__social-network {
     grid-row: 1/2;
@@ -1724,14 +1724,16 @@ img {
   }
   .navbar-bottom {
     display: none;
-  }
-  .navbar-bottom--visible {
-    display: block;
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
     top: 70px;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+    overflow-y: auto;
   }
   .navbar-top {
     padding-top: 24px;
