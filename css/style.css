@@ -1543,7 +1543,7 @@ img {
   border-radius: 8px;
   z-index: 101;
   max-width: 478px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -52%);
   visibility: hidden;
   opacity: 0;
 }
@@ -1873,6 +1873,14 @@ img {
   .footer__payment {
     margin-left: 0;
   }
+
+  .modal__dialog {
+    padding: 33px 9%;
+  }
+  .modal__info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -2189,6 +2197,11 @@ img {
   .footer__legal {
     max-width: 150px;
   }
+
+  .modal__dialog {
+    padding: 33px 25px 25px 25px;
+    min-width: 378px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -2424,6 +2437,10 @@ img {
   .footer__disclaimer {
     margin-bottom: 10px;
   }
+  .modal__dialog {
+    padding: 33px 25px 25px 25px;
+    min-width: 348px;
+  }
 }
 @media (max-width: 410px) {
   .subscribe {
@@ -2462,6 +2479,14 @@ img {
   .packages-info__text {
     height: 50%;
   }
+
+  .modal__dialog {
+    padding: 25px 20px 20px 20px;
+    min-width: 300px;
+  }
+  .modal__info {
+    flex-basis: 100%;
+  }
 }
 @media (max-width: 320px) {
   .map {
@@ -2478,5 +2503,13 @@ img {
 
   .packages-info__text {
     height: 52%;
+  }
+
+  .modal__dialog {
+    padding: 25px 20px 20px 20px;
+    min-width: 290px;
+  }
+  .modal__info {
+    flex-basis: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
