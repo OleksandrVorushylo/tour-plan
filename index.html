@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar-fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
@@ -252,7 +252,7 @@
                 <span class="packages-info__price-old">$ 10,500</span>
                 <strong class="packages-info__price-new">$ 8,500</strong>
               </div>
-              <button class="packages-info__button">Book Now</button>
+              <button data-toggle="modal" class="packages-info__button">Book Now</button>
             </div>
             <!-- /.packages-info__price -->
           </div>
@@ -288,7 +288,7 @@
                 <span class="packages-info__price-old">$ 8,500</span>
                 <strong class="packages-info__price-new">$ 3,000</strong>
               </div>
-              <button class="packages-info__button">Book Now</button>
+              <button data-toggle="modal" class="packages-info__button">Book Now</button>
             </div>
             <!-- /.packages-info__price -->
           </div>
@@ -324,7 +324,7 @@
                 <span class="packages-info__price-old">$ 10,500</span>
                 <strong class="packages-info__price-new">$ 9,500</strong>
               </div>
-              <button class="packages-info__button">Book Now</button>
+              <button data-toggle="modal" class="packages-info__button">Book Now</button>
             </div>
             <!-- /.packages-info__price -->
           </div>
@@ -360,7 +360,7 @@
                 <span class="packages-info__price-old">$ 4,500</span>
                 <strong class="packages-info__price-new">$ 2,500</strong>
               </div>
-              <button class="packages-info__button">Book Now</button>
+              <button data-toggle="modal" class="packages-info__button">Book Now</button>
             </div>
             <!-- /.packages-info__price -->
           </div>
@@ -396,7 +396,7 @@
                 <span class="packages-info__price-old">$ 6,500</span>
                 <strong class="packages-info__price-new">$ 3,500</strong>
               </div>
-              <button class="packages-info__button">Book Now</button>
+              <button data-toggle="modal" class="packages-info__button">Book Now</button>
             </div>
             <!-- /.packages-info__price -->
           </div>
@@ -414,8 +414,8 @@
       <h2 class="newsletter-title newsletter-title--position">subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="email" placeholder="Your email address" class="subscribe__input" name="email">
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe subscribe-form">
+        <input type="email" placeholder="Your email address" class="subscribe__input" name="email" required>
         <button name="button-form" value="mail" class="subscribe__button" type="submit">Send</button>
       </form>
     </div>
@@ -519,14 +519,14 @@
         <div class="card activities__card activities__card--one">
           <img src="img/activity-1.jpg" alt="The curious corner of&nbsp;chamarel" class="card__image">
           <h2 class="card__title card__title--first">The curious corner of chamarel</h2>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h2 class="card__title card__title--second">Gymkhana club golf
             course</h2>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card activities__card--position">
@@ -534,13 +534,13 @@
           <h2 class="card__title card__title--third">Tamarind falls hiking
             trip - full day
           </h2>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h2 class="card__title card__title--last">The blue marine discovery quest</h2>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
       </div>
@@ -664,8 +664,12 @@
         <div class="footer__contact-form">
           <h3 class="footer__title">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" >
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" >
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" class="input footer__input footer__input--phone" placeholder="Phone Number*" name="phone" required>
+            </div>
             <textarea class="footer__message" placeholder="Message" name="message" ></textarea>
             <button name="button-form" value="contact" class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
@@ -708,18 +712,18 @@
   </section>
   <!-- /.footer -->
   <div class="modal">
-    <div class="modal__overlay close__modal">
+    <div class="modal__overlay close-modal">
       
     </div>
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
-      <a href="#" class="modal__close close__modal"><img src="img/close.svg" alt="Icon: Close">
+      <a href="#" class="modal__close close-modal"><img src="img/close.svg" alt="Icon: Close">
       </a>
       <h3 class="modal__title">Booking</h3>
       <form action="send.php" method="POST" class="modal__form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-        <input type="email" placeholder="Email*" class="input modal__input" name="email">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+        <input type="email" placeholder="Email*" class="input modal__input" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button name="button-form" value="modal" class="button modal__button" type="submit">Send</button>
         <span class="modal__info">* Required Fields</span>
@@ -729,6 +733,8 @@
   </div>
   <!-- /.modal -->
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
