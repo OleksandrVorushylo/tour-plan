@@ -22,8 +22,10 @@
     border-radius: 8px
     z-index: 101
     max-width: 478px
+    max-height: 85%
     transform: translate(-50%, -52%)
     visibility: hidden
+    overflow: auto
     opacity: 0
     &--visible
       visibility: visible
@@ -41,7 +43,6 @@
     font-size: 18px
     line-height: 23px
     margin: 0
-    margin-bottom: 15px
     text-align: center
   &__form
     display: flex
@@ -58,7 +59,8 @@
     padding: 0 23px
     border: none
     outline: 0
-    margin-bottom: 15px
+    margin-bottom: 0
+    margin-top: 15px
     &::placeholder
       color: $placeholder-color
   &__message
@@ -69,6 +71,7 @@
     outline: 0
     border: none
     margin-bottom: 15px
+    margin-top: 15px
     resize: none
     overflow: auto
     &::placeholder

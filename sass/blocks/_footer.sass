@@ -113,13 +113,15 @@
     font-size: 12px
     line-height: 15px
   &__input
-    width: 255px
+    width: 100%
     height: 50px
     border-radius: 4px
     padding: 0 23px
     border: none
     outline: 0
-    margin-bottom: 15px
+    margin-bottom: 0
+    &-group
+      width: 255px
 
     &::placeholder
       color: $placeholder-color
@@ -131,6 +133,7 @@
     outline: 0
     border: none
     margin-bottom: 23px
+    margin-top: 15px
     resize: none
     overflow: auto
     &::placeholder

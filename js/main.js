@@ -47,7 +47,7 @@ $(".packages-first__description").click(function() {
 });
 
 var modalButton = $('[data-toggle=modal]');
-var closeModelButton = $(".close__modal");
+var closeModelButton = $(".close-modal");
   modalButton.on('click', openModal);
   closeModelButton.on('click', closeModal);
 
@@ -74,5 +74,49 @@ var closeModelButton = $(".close__modal");
     modalDialog.removeClass("modal__dialog--visible");
   }
  });
+
+ // Код обработки формы
+
+ $('.modal__form').validate({
+   errorClass: "invalid",
+   messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "The name must not be shorter than two characters"
+    },
+    email: {
+      required: "Please specify your email",
+      email: "Email address must be in the format of name@domain.com"
+    },
+    phone: { 
+      required: "Please specify your phone number",
+      phone: "The phone number should be in this format: +7 (999) 999-99-99"
+    },
+  },
+ })
+ $('.subscribe-form').validate({
+   errorClass: "subscribe-invalid",
+   messages: {
+    email: {
+      required: "Please specify your email",
+      email: "Email address must be in the format of name@domain.com"
+    },
+  },
+ })
+ $('.footer__form').validate({
+   errorClass: "invalid",
+   messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "The name must not be shorter than two characters"
+    },
+    phone: { 
+      required: "Please specify your phone number",
+      phone: "The phone number should be in this format: +7 (999) 999-99-99"
+    },
+  },
+ })
+
+ $('[type=tel]').mask('+7(000) 000-0000');
 
 });

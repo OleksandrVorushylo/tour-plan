@@ -36,7 +36,10 @@
     &-wrapper
       grid-template-columns: repeat(4, minmax(min-content, 1fr))
     &__input
-      flex-basis: 100%
+      &--phone
+        margin-top: 15px
+      &-group
+        flex-basis: 100%
     &__contact-form
 
 @media (max-width: 992px)
@@ -193,7 +196,7 @@
       margin-left: 0
   .modal
     &__dialog
-      padding: 33px 9%
+      padding: 33px 7%
     &__info
       padding-top: 10px
       padding-bottom: 10px
@@ -213,13 +216,12 @@
       &--position
         margin-bottom: 37px
   .navbar
-    &__mobile
-      &--fixed
-        position: fixed
-        z-index: 50
-        left: 0
-        top: 0
-        right: 0
+    &-fixed
+      position: fixed
+      z-index: 50
+      left: 0
+      top: 0
+      right: 0
     &-bottom
       display: none
       position: fixed
@@ -681,6 +683,12 @@
       min-width: 300px
     &__info
       flex-basis: 100%
+      text-align: right
+      padding: 0
+      margin-bottom: 15px
+    &__button
+      order: 1
+      width: 100%
 @media (max-width: 320px)
   .map
     height: 172px
