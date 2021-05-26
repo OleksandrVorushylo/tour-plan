@@ -1098,12 +1098,10 @@ img {
   cursor: pointer;
 }
 .subscribe-invalid {
-  color: #333333;
+  color: #FFFFFF;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 600;
   position: relative;
-  background-color: white;
-  border-radius: 4px;
 }
 .subscribe-invalid::-moz-placeholder {
   color: #BDBDBD;
@@ -1119,6 +1117,12 @@ img {
   color: #BDBDBD;
   font-weight: 300;
   font-size: 14px;
+}
+
+.subscribe__input {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .reviews {
@@ -1470,8 +1474,15 @@ img {
   outline: 0;
   margin-bottom: 0;
 }
+.footer__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 539px;
+}
 .footer__input-group {
   width: 255px;
+  display: flex;
+  flex-direction: column;
 }
 .footer__input::-moz-placeholder {
   color: #BDBDBD;
@@ -1614,6 +1625,7 @@ img {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  margin-bottom: 15px;
 }
 .modal__input {
   width: 100%;
@@ -1674,6 +1686,13 @@ img {
   color: #E0E0E0;
 }
 
+.input {
+  color: #333333;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1708,11 +1727,17 @@ img {
     grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
     grid-template-columns: repeat(4, minmax(min-content, 1fr));
   }
+  .footer__input {
+    width: 100%;
+  }
   .footer__input--phone {
-    margin-top: 15px;
+    margin-top: 0;
+  }
+  .footer__input-wrapper {
+    width: 100%;
   }
   .footer__input-group {
-    flex-basis: 100%;
+    width: 219px;
   }
 }
 @media (max-width: 992px) {
@@ -1898,6 +1923,15 @@ img {
   }
   .footer__input {
     flex-basis: auto;
+  }
+  .footer__input--phone {
+    margin-top: 0;
+  }
+  .footer__input-wrapper {
+    width: 100%;
+  }
+  .footer__input-group {
+    width: 255px;
   }
   .footer__title {
     margin-bottom: 19px;
@@ -2418,6 +2452,19 @@ img {
   }
   .footer__input {
     flex-basis: 100%;
+  }
+  .footer__input--phone {
+    margin-top: 15px;
+  }
+  .footer__input-wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer__input-group {
+    width: 100%;
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .footer__message {
     width: 100%;

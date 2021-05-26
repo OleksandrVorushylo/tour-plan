@@ -122,7 +122,7 @@
   <section class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <a href="https://vorushilo.ru/homeworks/tour-plan/" class="footer-logo footer-logo--position">
+        <a href="#" class="footer-logo footer-logo--position">
           <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer-logo">
         </a>
         <div class="footer__list footer__categories">
@@ -242,10 +242,18 @@
         <div class="footer__contact-form">
           <h3 class="footer__title">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+            <div class="footer__input-wrapper">
+              <div class="footer__input-group">
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
+              </div>
+              <div class="footer__input-group">
+                <input type="tel" class="input footer__input footer__input--phone" placeholder="Phone Number*" name="phone"
+                  required minlength="18">
+              </div>
+            </div>
+            <!-- /.footer__input-wrapper -->
             <textarea class="footer__message" placeholder="Message" name="message"></textarea>
-            <button class="button footer__button" type="submit">Send</button>
+            <button name="button-form" value="contact" class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
         </div>
@@ -284,7 +292,31 @@
     </div>
     <!-- /.container -->
   </section>
+  <!-- /.footer -->
+  <div class="modal">
+    <div class="modal__overlay close-modal">
+  
+    </div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close close-modal"><img src="img/close.svg" alt="Icon: Close">
+      </a>
+      <h3 class="modal__title">Booking</h3>
+      <form action="send.php" method="POST" class="modal__form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+        <input type="email" placeholder="Email*" class="input modal__input" name="email" required>
+        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+        <button name="button-form" value="modal" class="button modal__button" type="submit">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

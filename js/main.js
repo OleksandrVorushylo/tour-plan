@@ -117,6 +117,6 @@ var closeModelButton = $(".close-modal");
   },
  })
 
- $('[type=tel]').mask('+7(000) 000-0000');
+ $('[type=tel]').mask('+7 (000) 000-00-00');
 
 });
