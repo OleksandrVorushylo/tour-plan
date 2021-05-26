@@ -90,7 +90,8 @@ var closeModelButton = $(".close-modal");
     },
     phone: { 
       required: "Please specify your phone number",
-      phone: "The phone number should be in this format: +7 (999) 999-99-99"
+      phone: "The phone number should be in this format: +7 (999) 999-99-99",
+      minlength: "Please enter at least 11 characters."
     },
   },
  })
@@ -112,11 +113,14 @@ var closeModelButton = $(".close-modal");
     },
     phone: { 
       required: "Please specify your phone number",
-      phone: "The phone number should be in this format: +7 (999) 999-99-99"
+      phone: "The phone number should be in this format: +7 (999) 999-99-99",
+      minlength: "Please enter at least 11 characters."
     },
   },
  })
 
  $('[type=tel]').mask('+7 (000) 000-00-00');
+
+ AOS.init();
 
 });

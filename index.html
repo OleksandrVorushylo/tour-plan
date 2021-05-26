@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,7 +18,7 @@
   <header class="navbar navbar-fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="200">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
         <form action="#" class="search navbar__search navbar__search--mobile--hidden">
@@ -113,13 +114,13 @@
               <img class="stars__star" src="img/star.svg" alt="">
             </div>
             <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
-            <span class="offer hotel-info__offer">Flash Offer</span>
+            <span class="offer hotel-info__offer" data-aos="zoom-in">Flash Offer</span>
           </div>
           <!-- /.hotel-wrapper -->
           <p class="hotel-description hotel-info__description">Half-Board / All Inclusive + Complimentary Activities + Child Stays Free</p>
         </div>
         <!-- /.hotel-info__text -->
-        <div class="rating hotel-info__rating">
+        <div class="rating hotel-info__rating" data-aos="zoom-in">
           <span class="rating__text">User Rattings</span>
           <span class="rating__counter">4.5/<span class="rating__counter-small">5</span></span>
         </div>
@@ -127,7 +128,7 @@
       </div>
       <!-- /.hotel-info -->
       <div class="hotel-grid">
-          <div class="swiper-container hotel-slider hotel__slider">
+          <div class="swiper-container hotel-slider hotel__slider" data-aos="fade-right">
             <!-- Дополнительная необходимая обертка -->
             <div class="swiper-wrapper hotel-slider__wrapper">
               <!-- Слайды -->
@@ -152,7 +153,7 @@
             <button class="hotel-slider__button hotel-slider__button--next"></button>
           </div>
           <!-- /.Основной контейнер слайдера -->
-          <div class="hotel-right">
+          <div class="hotel-right" data-aos="fade-left">
             <div class="booking booking--position">
             <div class="booking__info">
               <div class="booking__price">
@@ -204,7 +205,7 @@
       <h2 class="packages__title">Other Packages</h2>
       <div class="packages-wrapper">
         <!-- Первая карточка -->
-        <div class="packages-card packages-first"> 
+        <div class="packages-card packages-first" data-aos="fade-right" data-aos-delay="100"> 
           <img src="img/packeges-1.jpg" alt="" class="packages-img packages-first__img">
           <span class="offer packages-offer packages-first__offer">Flash Offer</span>
           <div class="packages-info packages-first__info">
@@ -260,7 +261,7 @@
         </div>
         <!-- /.packages-card -->
         <!-- Вторая карточка -->
-        <div class="packages-card">
+        <div class="packages-card" data-aos="fade-left" data-aos-delay="100">
           <img src="img/packeges-2.jpg" alt="" class="packages-img">
           <span class="offer packages-offer">Flash Offer</span>
           <div class="packages-info">
@@ -296,7 +297,7 @@
         </div>
         <!-- /.packages-card -->
         <!-- Третья карточка -->
-        <div class="packages-card">
+        <div class="packages-card" data-aos="fade-up-right" data-aos-delay="200">
           <img src="img/packeges-3.jpg" alt="" class="packages-img">
           <span class="offer packages-offer">Flash Offer</span>
           <div class="packages-info">
@@ -332,7 +333,7 @@
         </div>
         <!-- /.packages-card -->
         <!-- Четвертая карточка -->
-        <div class="packages-card">
+        <div class="packages-card" data-aos="fade-up" data-aos-delay="200">
           <img src="img/packeges-4.jpg" alt="" class="packages-img">
           <span class="offer packages-offer">Flash Offer</span>
           <div class="packages-info">
@@ -368,7 +369,7 @@
         </div>
         <!-- /.packages-card -->
         <!-- Пятая карточка -->
-        <div class="packages-card">
+        <div class="packages-card" data-aos="fade-up-left" data-aos-delay="200">
           <img src="img/packeges-5.jpg" alt="" class="packages-img">
           <span class="offer packages-offer">Flash Offer</span>
           <div class="packages-info">
@@ -409,8 +410,8 @@
 
   </section>
   <!-- /.packages -->
-  <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
-    <div class="newsletter-wrapper">
+  <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg" data-aos-delay="200">
+    <div class="newsletter-wrapper" data-aos="zoom-in">
       <h2 class="newsletter-title newsletter-title--position">subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
@@ -516,20 +517,20 @@
         Other Activities
       </h2>
       <div class="activities-wrapper">
-        <div class="card activities__card activities__card--one">
+        <div class="card activities__card activities__card--one" data-aos="fade-up-right" data-aos-delay="200">
           <img src="img/activity-1.jpg" alt="The curious corner of&nbsp;chamarel" class="card__image">
           <h2 class="card__title card__title--first">The curious corner of chamarel</h2>
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="200">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h2 class="card__title card__title--second">Gymkhana club golf
             course</h2>
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card activities__card--position">
+        <div class="card activities__card activities__card--position" data-aos="fade-up" data-aos-delay="200">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h2 class="card__title card__title--third">Tamarind falls hiking
             trip - full day
@@ -537,7 +538,7 @@
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up-left" data-aos-delay="200">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h2 class="card__title card__title--last">The blue marine discovery quest</h2>
           <button data-toggle="modal" class="card__button">Book Now</button>
@@ -552,7 +553,7 @@
   <section class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <a href="#" class="footer-logo footer-logo--position">
+        <a href="#" class="footer-logo footer-logo--position" data-aos="zoom-in">
           <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer-logo">
         </a>
         <div class="footer__list footer__categories">
@@ -739,6 +740,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

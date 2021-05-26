@@ -2570,6 +2570,9 @@ img {
   .packages-info__text {
     height: 50%;
   }
+  .packages-first__title {
+    min-width: 155px;
+  }
 
   .modal__dialog {
     padding: 25px 20px 20px 20px;
