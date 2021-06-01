@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
         </a>
         <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" placeholder="Search Location" class="search__input">
-          <button class="search__button">
+          <button class="button search__button">
             <img class="search__icon" src="img/search.svg" alt="Icon: search">
           </button>
         </form>
@@ -59,25 +59,25 @@
             </form>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">All Deals</a>
+            <a href="#" class="link navbar-menu__link">All Deals</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Hotels</a>
+            <a href="#" class="link navbar-menu__link">Hotels</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Activities</a>
+            <a href="#" class="link navbar-menu__link">Activities</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+            <a href="#" class="link navbar-menu__link">Hotel Day Packages</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Restaurants</a>
+            <a href="#" class="link navbar-menu__link">Restaurants</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Events</a>
+            <a href="#" class="link navbar-menu__link">Events</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Rodrigues</a>
+            <a href="#" class="link navbar-menu__link">Rodrigues</a>
           </li>
         </ul>
       </div>
@@ -89,12 +89,12 @@
     <div class="container">
       <ul class="breadcrumb-list">
         <li class="breadcrumb-list__item">
-          <a href="#" class="breadcrumb-list__link">Home</a>
+          <a href="#" class="link breadcrumb-list__link">Home</a>
         </li>
         <li class="breadcrumb-list__item">
-          <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+          <a href="#" class="link breadcrumb-list__link">Flash Offers</a>
         </li>
-        <li class="breadcrumb-list__item">
+        <li class="link breadcrumb-list__item">
           Grand Hilton Hotel
         </li>
       </ul>
@@ -128,7 +128,7 @@
       </div>
       <!-- /.hotel-info -->
       <div class="hotel-grid">
-          <div class="swiper-container hotel-slider hotel__slider" data-aos="fade-right">
+          <div class="swiper-container hotel-slider hotel__slider" data-aos="fade-down" data-aos-delay="100">
             <!-- Дополнительная необходимая обертка -->
             <div class="swiper-wrapper hotel-slider__wrapper">
               <!-- Слайды -->
@@ -136,16 +136,16 @@
                 <img class="swiper-slide__img" src="img/slide.jpg" alt="slide">
               </div>
               <div class="swiper-slide hotel-slider__slide">
-                <img class="swiper-slide__img" src="img/slide-two.jpg" alt="slide">
+                <img class="swiper-slide__img" src="img/slide-two.jpg" alt="slide" loading=lazy>
               </div>
               <div class="swiper-slide hotel-slider__slide">
-                <img class="swiper-slide__img" src="img/slide-three.jpg" alt="slide">
+                <img class="swiper-slide__img" src="img/slide-three.jpg" alt="slide" loading=lazy>
               </div>
               <div class="swiper-slide hotel-slider__slide">
-                <img class="swiper-slide__img" src="img/slide-four.jpg" alt="slide">
+                <img class="swiper-slide__img" src="img/slide-four.jpg" alt="slide" loading=lazy>
               </div>
               <div class="swiper-slide hotel-slider__slide">
-                <img class="swiper-slide__img" src="img/slide-five.jpg" alt="slide">
+                <img class="swiper-slide__img" src="img/slide-five.jpg" alt="slide" loading=lazy>
               </div>
             </div>
             <!-- Если нам нужны кнопки навигации -->
@@ -153,8 +153,8 @@
             <button class="hotel-slider__button hotel-slider__button--next"></button>
           </div>
           <!-- /.Основной контейнер слайдера -->
-          <div class="hotel-right" data-aos="fade-left">
-            <div class="booking booking--position">
+          <div class="hotel-right">
+            <div class="booking booking--position" data-aos="fade-up" data-aos-delay="200">
             <div class="booking__info">
               <div class="booking__price">
                 <span class="booking__start">price starts as</span>
@@ -164,12 +164,12 @@
               <!-- /.booking__price -->
               <div class="booking__room">
                 <div class="booking__text">
-                  <img src="img/user.svg" alt="user" class="booking__icon">
+                  <img src="img/user.svg" alt="user" class="booking__icon" loading=lazy>
                   <span class="booking__description">2 x Guests</span>
                 </div>
                 <!-- /.booking__text -->
                 <div class="booking__text">
-                  <img src="img/home.svg" alt="home" class="booking__icon">
+                  <img src="img/home.svg" alt="home" class="booking__icon" loading=lazy>
                   <span class="booking__description">1 x Room</span>
                 </div>
                 <!-- /.booking__text -->
@@ -179,8 +179,8 @@
             <!-- /.booking-info -->
             <div class="booking__call-center">
               <span class="booking__heading">Quick Booking</span>
-              <a class="booking__number" href="tel:12100">
-                <img src="img/phone-call.svg" alt="phone-call">
+              <a class="link booking__number" href="tel:12100">
+                <img src="img/phone-call.svg" alt="phone-call" loading=lazy>
                 <span class="booking__num">12100</span>
               </a>
             </div>
@@ -188,9 +188,8 @@
             <button data-toggle="modal" class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
-          <div class="map">
-            <iframe class="map-block"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13294.695297474205!2d98.29603342819881!3d7.838772053201329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2snl!4v1620912563628!5m2!1sru!2snl" allowfullscreen="" loading="lazy"></iframe>
+          <div class="map" data-aos="fade-up" data-aos-delay="300">
+            <iframe class="map-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13294.695297474205!2d98.29603342819881!3d7.838772053201329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2snl!4v1620912563628!5m2!1sru!2snl" allowfullscreen="" loading="lazy"></iframe>
           </div>
           <!-- /.map -->
           </div>
@@ -202,11 +201,11 @@
   <!-- /.hotel -->
   <section class="packages">
     <div class="container">
-      <h2 class="packages__title">Other Packages</h2>
+      <h2 class="packages__title" data-aos="zoom-in" data-aos-delay="200">Other Packages</h2>
       <div class="packages-wrapper">
         <!-- Первая карточка -->
-        <div class="packages-card packages-first" data-aos="fade-right" data-aos-delay="100"> 
-          <img src="img/packeges-1.jpg" alt="" class="packages-img packages-first__img">
+        <div class="packages-card packages-first" data-aos="fade-up" data-aos-delay="200"> 
+          <img src="img/packeges-1.jpg" alt="" class="packages-img packages-first__img" loading=lazy>
           <span class="offer packages-offer packages-first__offer">Flash Offer</span>
           <div class="packages-info packages-first__info">
             <div class="stars packages-stars">
@@ -253,7 +252,7 @@
                 <span class="packages-info__price-old">$ 10,500</span>
                 <strong class="packages-info__price-new">$ 8,500</strong>
               </div>
-              <button data-toggle="modal" class="packages-info__button">Book Now</button>
+              <button data-toggle="modal" class="button packages-info__button">Book Now</button>
             </div>
             <!-- /.packages-info__price -->
           </div>
@@ -261,8 +260,8 @@
         </div>
         <!-- /.packages-card -->
         <!-- Вторая карточка -->
-        <div class="packages-card" data-aos="fade-left" data-aos-delay="100">
-          <img src="img/packeges-2.jpg" alt="" class="packages-img">
+        <div class="packages-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="img/packeges-2.jpg" alt="" class="packages-img" loading=lazy>
           <span class="offer packages-offer">Flash Offer</span>
           <div class="packages-info">
             <h2 class="packages-info__title">LUX* Belle Mare</h2>
@@ -289,7 +288,7 @@
                 <span class="packages-info__price-old">$ 8,500</span>
                 <strong class="packages-info__price-new">$ 3,000</strong>
               </div>
-              <button data-toggle="modal" class="packages-info__button">Book Now</button>
+              <button data-toggle="modal" class="button packages-info__button">Book Now</button>
             </div>
             <!-- /.packages-info__price -->
           </div>
@@ -297,8 +296,8 @@
         </div>
         <!-- /.packages-card -->
         <!-- Третья карточка -->
-        <div class="packages-card" data-aos="fade-up-right" data-aos-delay="200">
-          <img src="img/packeges-3.jpg" alt="" class="packages-img">
+        <div class="packages-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="img/packeges-3.jpg" alt="" class="packages-img" loading=lazy>
           <span class="offer packages-offer">Flash Offer</span>
           <div class="packages-info">
             <h2 class="packages-info__title">White Palace</h2>
@@ -325,7 +324,7 @@
                 <span class="packages-info__price-old">$ 10,500</span>
                 <strong class="packages-info__price-new">$ 9,500</strong>
               </div>
-              <button data-toggle="modal" class="packages-info__button">Book Now</button>
+              <button data-toggle="modal" class="button packages-info__button">Book Now</button>
             </div>
             <!-- /.packages-info__price -->
           </div>
@@ -334,7 +333,7 @@
         <!-- /.packages-card -->
         <!-- Четвертая карточка -->
         <div class="packages-card" data-aos="fade-up" data-aos-delay="200">
-          <img src="img/packeges-4.jpg" alt="" class="packages-img">
+          <img src="img/packeges-4.jpg" alt="" class="packages-img" loading=lazy>
           <span class="offer packages-offer">Flash Offer</span>
           <div class="packages-info">
             <h2 class="packages-info__title">Luxury Place</h2>
@@ -361,7 +360,7 @@
                 <span class="packages-info__price-old">$ 4,500</span>
                 <strong class="packages-info__price-new">$ 2,500</strong>
               </div>
-              <button data-toggle="modal" class="packages-info__button">Book Now</button>
+              <button data-toggle="modal" class="button packages-info__button">Book Now</button>
             </div>
             <!-- /.packages-info__price -->
           </div>
@@ -369,8 +368,8 @@
         </div>
         <!-- /.packages-card -->
         <!-- Пятая карточка -->
-        <div class="packages-card" data-aos="fade-up-left" data-aos-delay="200">
-          <img src="img/packeges-5.jpg" alt="" class="packages-img">
+        <div class="packages-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="img/packeges-5.jpg" alt="" class="packages-img" loading=lazy>
           <span class="offer packages-offer">Flash Offer</span>
           <div class="packages-info">
             <h2 class="packages-info__title">Hotel Five Star</h2>
@@ -397,7 +396,7 @@
                 <span class="packages-info__price-old">$ 6,500</span>
                 <strong class="packages-info__price-new">$ 3,500</strong>
               </div>
-              <button data-toggle="modal" class="packages-info__button">Book Now</button>
+              <button data-toggle="modal" class="button packages-info__button">Book Now</button>
             </div>
             <!-- /.packages-info__price -->
           </div>
@@ -410,14 +409,14 @@
 
   </section>
   <!-- /.packages -->
-  <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg" data-aos-delay="200">
+  <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
     <div class="newsletter-wrapper" data-aos="zoom-in">
       <h2 class="newsletter-title newsletter-title--position">subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form action="send.php" method="POST" class="subscribe newsletter__subscribe subscribe-form">
         <input type="email" placeholder="Your email address" class="subscribe__input" name="email" required style="color: #333333">
-        <button name="button-form" value="mail" class="subscribe__button" type="submit">Send</button>
+        <button name="button-form" value="mail" class="button subscribe__button" type="submit">Send</button>
       </form>
     </div>
     <!-- /.newsletter-wrapper -->
@@ -426,14 +425,14 @@
 
   <section class="reviews">
     <div class="container">
-      <h2 class="reviews-title">What people thinks about us</h2>
+      <h2 class="reviews-title" data-aos="zoom-in" data-aos-delay="200">What people thinks about us</h2>
       <!-- /.reviews-title -->
       <div class="swiper-container reviews-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews-avatar.jpg" alt="Icon: Avatar" class="reviews-slider__avatar">
+                <img src="img/reviews-avatar.jpg" alt="Icon: Avatar" class="reviews-slider__avatar" loading=lazy>
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
@@ -459,7 +458,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews-avatar-two.jpg" alt="Icon: Avatar" class="reviews-slider__avatar">
+                <img src="img/reviews-avatar-two.jpg" alt="Icon: Avatar" class="reviews-slider__avatar" loading=lazy>
                 <h3 class="reviews-slider__username">Jon Snow</h3>
                 <span class="reviews-slider__date">Stayed 15 Jan, 2018</span>
                 <div class="reviews-slider__rating">
@@ -481,7 +480,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews-avatar-three.jpg" alt="Icon: Avatar" class="reviews-slider__avatar">
+                <img src="img/reviews-avatar-three.jpg" alt="Icon: Avatar" class="reviews-slider__avatar" loading=lazy>
                 <h3 class="reviews-slider__username">Daenerys Targaryen</h3>
                 <span class="reviews-slider__date">Stayed 16 Dec, 2018</span>
                 <div class="reviews-slider__rating">
@@ -517,31 +516,31 @@
         Other Activities
       </h2>
       <div class="activities-wrapper">
-        <div class="card activities__card activities__card--one" data-aos="fade-up-right" data-aos-delay="200">
-          <img src="img/activity-1.jpg" alt="The curious corner of&nbsp;chamarel" class="card__image">
+        <div class="card activities__card activities__card--one" data-aos="fade-up" data-aos-delay="100">
+          <img src="img/activity-1.jpg" alt="The curious corner of&nbsp;chamarel" class="card__image" loading=lazy>
           <h2 class="card__title card__title--first">The curious corner of chamarel</h2>
-          <button data-toggle="modal" class="card__button">Book Now</button>
+          <button data-toggle="modal" class="button card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card" data-aos="fade-up" data-aos-delay="200">
-          <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
+          <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image" loading=lazy>
           <h2 class="card__title card__title--second">Gymkhana club golf
             course</h2>
-          <button data-toggle="modal" class="card__button">Book Now</button>
+          <button data-toggle="modal" class="button card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card activities__card--position" data-aos="fade-up" data-aos-delay="200">
-          <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
+        <div class="card activities__card activities__card--position" data-aos="fade-up" data-aos-delay="300">
+          <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image" loading=lazy>
           <h2 class="card__title card__title--third">Tamarind falls hiking
             trip - full day
           </h2>
-          <button data-toggle="modal" class="card__button">Book Now</button>
+          <button data-toggle="modal" class="button card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card" data-aos="fade-up-left" data-aos-delay="200">
-          <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="400">
+          <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image" loading=lazy>
           <h2 class="card__title card__title--last">The blue marine discovery quest</h2>
-          <button data-toggle="modal" class="card__button">Book Now</button>
+          <button data-toggle="modal" class="button card__button">Book Now</button>
         </div>
         <!-- /.card -->
       </div>
@@ -553,35 +552,35 @@
   <section class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <a href="#" class="footer-logo footer-logo--position" data-aos="zoom-in">
-          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer-logo">
+        <a href="#" class="footer-logo footer-logo--position" data-aos="zoom-in" data-aos-delay="200">
+          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer-logo" loading=lazy>
         </a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">All Categories</h3>
           <ul class="footer__ul">
             <li class="footer__item">
-              <a href="#" class="footer__link">All Deals</a>
+              <a href="#" class="link footer__link">All Deals</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Hotels</a>
+              <a href="#" class="link footer__link">Hotels</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Activities</a>
+              <a href="#" class="link footer__link">Activities</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Spa Packages</a>
+              <a href="#" class="link footer__link">Spa Packages</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Hotel Day Packages</a>
+              <a href="#" class="link footer__link">Hotel Day Packages</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Restaurants</a>
+              <a href="#" class="link footer__link">Restaurants</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Fitness</a>
+              <a href="#" class="link footer__link">Fitness</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Rodrigues</a>
+              <a href="#" class="link footer__link">Rodrigues</a>
             </li>
           </ul>
         </div>
@@ -590,22 +589,22 @@
           <h3 class="footer__title">Additional Information</h3>
           <ul class="footer__ul">
             <li class="footer__item">
-              <a href="#" class="footer__link">About Us</a>
+              <a href="#" class="link footer__link">About Us</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Contact Us</a>
+              <a href="#" class="link footer__link">Contact Us</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">How does it work?</a>
+              <a href="#" class="link footer__link">How does it work?</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Frequently Asked Questions</a>
+              <a href="#" class="link footer__link">Frequently Asked Questions</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Deals.mu loyalty program</a>
+              <a href="#" class="link footer__link">Deals.mu loyalty program</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Promote your Business on BTP</a>
+              <a href="#" class="link footer__link">Promote your Business on BTP</a>
             </li>
           </ul>
         </div>
@@ -613,9 +612,9 @@
         <div class="footer__social-network">
           <h3 class="footer__title  footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="https://www.facebook.com/" class="footer__link footer__link--facebook" target="_blank"><img src="img/facebook.svg" alt="Icon: Facebook" class="footer__icon"></a>
-            <a href="https://www.youtube.com/" class="footer__link footer__link--youtube" target="_blank"><img src="img/youtube.svg" alt="Icon: Youtube" class="footer__icon"></a>
-            <a href="https://www.instagram.com/" class="footer__link" target="_blank"><img src="img/instagram.svg" alt="Icon: Instagram" class="footer__icon"></a>
+            <a href="https://www.facebook.com/" class="footer__link footer__link--facebook" target="_blank"><img src="img/facebook.svg" alt="Icon: Facebook" class="shadow footer__icon" loading=lazy></a>
+            <a href="https://www.youtube.com/" class="footer__link footer__link--youtube" target="_blank"><img src="img/youtube.svg" alt="Icon: Youtube" class="shadow footer__icon" loading=lazy></a>
+            <a href="https://www.instagram.com/" class="footer__link" target="_blank"><img src="img/instagram.svg" alt="Icon: Instagram" class="shadow footer__icon" loading=lazy></a>
           </div>
         </div>
         <!-- /.footer__social-network -->
@@ -623,16 +622,16 @@
           <h3 class="footer__title">Legal Information</h3>
           <ul class="footer__ul">
             <li class="footer__item">
-              <a href="#" class="footer__link">Terms & Conditions</a>
+              <a href="#" class="link footer__link">Terms & Conditions</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Disclaimer</a>
+              <a href="#" class="link footer__link">Disclaimer</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Cancellation policy</a>
+              <a href="#" class="link footer__link">Cancellation policy</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Privacy</a>
+              <a href="#" class="link footer__link">Privacy</a>
             </li>
           </ul>
         </div>
@@ -648,16 +647,16 @@
             <li class="footer__item">
               <img class="footer__contact-icon footer__contact-icon--phone" src="img/phone.svg" alt="">
               <div class="footer__contact-text">
-                <p class="footer__text">Tel (business hours) : <a href="tel:2691500" class="footer__link footer__link--tel">269 1500</a></p>
-                <p class="footer__text">Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__link footer__link--tel">52-56-61-38</a>
+                <p class="footer__text">Tel (business hours) : <a href="tel:2691500" class="link footer__link footer__link--tel">269 1500</a></p>
+                <p class="footer__text">Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="link footer__link footer__link--tel">52-56-61-38</a>
                   (08:00 am – 20:00 pm)</p>
-                <p class="footer__text">Tel (hotline) Sunday: <a href="tel:52566138" class="footer__link footer__link--tel">52-56-61-38</a> (08:00 am –
+                <p class="footer__text">Tel (hotline) Sunday: <a href="tel:52566138" class="link footer__link footer__link--tel">52-56-61-38</a> (08:00 am –
                   14:00 pm)</p>
               </div>
             </li>
             <li class="footer__item">
               <img class="footer__contact-icon footer__contact-icon--mail" src="img/mail.svg" alt="">
-              <a href="mailto:cherly.lawson@example.com" class="footer__link footer__link--position">cherly.lawson@example.com</a>
+              <a href="mailto:cherly.lawson@example.com" class="link footer__link footer__link--position">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
@@ -686,26 +685,26 @@
       <div class="bottom-wrapper">
         <div class="footer__bottom">
           <div class="footer__disclaimer">
-            <a href="#" class="footer__disclaimer-link">Disclaimer</a>
-            <a href="#" class="footer__disclaimer-link">Conditions of use</a>
-            <a href="#" class="footer__disclaimer-link">Cancellation policy</a>
+            <a href="#" class="link footer__disclaimer-link">Disclaimer</a>
+            <a href="#" class="link footer__disclaimer-link">Conditions of use</a>
+            <a href="#" class="link footer__disclaimer-link">Cancellation policy</a>
           </div>
           <!-- /.footer__disclaimer -->
           <div class="footer__payment">
             <a href="https://www.americanexpress.com/" class="footer__payment-link" target="_blank">
-              <img class="footer__payment-icon" src="img/amex.png" alt="">
+              <img class="shadow footer__payment-icon" src="img/amex.png" alt="" loading=lazy>
             </a>
             <a href="https://www.apple.com/apple-pay/" class="footer__payment-link" target="_blank">
-              <img class="footer__payment-icon" src="img/apple.png" alt="">
+              <img class="shadow footer__payment-icon" src="img/apple.png" alt="" loading=lazy>
             </a>
             <a href="https://pay.amazon.com/" class="footer__payment-link" target="_blank">
-              <img class="footer__payment-icon" src="img/amazon.png" alt="">
+              <img class="shadow footer__payment-icon" src="img/amazon.png" alt="" loading=lazy>
             </a>
             <a href="https://www.paypal.com/" class="footer__payment-link" target="_blank">
-              <img class="footer__payment-icon" src="img/paypal.png" alt="">
+              <img class="shadow footer__payment-icon" src="img/paypal.png" alt="" loading=lazy>
             </a>
             <a href="https://www.mastercard.us/" class="footer__payment-link" target="_blank">
-              <img class="footer__payment-icon" src="img/mastercard.png" alt="">
+              <img class="shadow footer__payment-icon" src="img/mastercard.png" alt="" loading=lazy>
             </a>
           </div>
           <!-- /.footer__payment -->
@@ -722,7 +721,7 @@
     </div>
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
-      <a href="#" class="modal__close close-modal"><img src="img/close.svg" alt="Icon: Close">
+      <a href="#" class="modal__close close-modal"><img src="img/close.svg" alt="Icon: Close" loading=lazy>
       </a>
       <h3 class="modal__title">Booking</h3>
       <form action="send.php" method="POST" class="modal__form">
