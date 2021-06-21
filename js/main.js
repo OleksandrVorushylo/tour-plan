@@ -28,6 +28,14 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
 
 });
 
+var infoSwiper = new Swiper(".info-content__swiper", {
+        slidesPerView: 1,
+        spaceBetween: 28,
+        slidesPerColumn: 1,
+        loop: true,
+        speed: 600,
+      });
+
 var menuButton = document.querySelector(".menu-button")
 menuButton.addEventListener('click', function () {
   document
@@ -117,9 +125,40 @@ var closeModelButton = $(".close-modal");
     },
   },
  })
+ $('.info-content__form').validate({
+   errorClass: "invalid",
+   messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "The name must not be shorter than two characters"
+    },
+    email: {
+      required: "Please specify your email",
+      email: "Email address must be in the format of name@domain.com"
+    },
+    phone: { 
+      required: "Please specify your phone number",
+      phone: "The phone number should be in this format: +7 (999) 999-99-99",
+      minlength: "Please enter at least 11 characters."
+    },
+  },
+ })
 
  $('[type=tel]').mask('+7 (000) 000-00-00');
 
  AOS.init();
+
+ $(document).ready(function () {
+   var tabsItem = $(".info-tabs__item");
+   var contentItem = $(".info-content__item");
+
+   tabsItem.on('click', function (event) {
+     var activeContent = $(this).attr("data-target");
+     tabsItem.removeClass("info-tabs__item--active")
+     contentItem.removeClass("info-content__item--active");
+     $(activeContent).addClass("info-content__item--active");
+     $(this).addClass("info-tabs__item--active");
+   })
+ });
 
 });
